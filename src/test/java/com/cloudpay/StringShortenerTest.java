@@ -1,6 +1,5 @@
 package com.cloudpay;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
@@ -20,7 +19,7 @@ public class StringShortenerTest {
 		String cad = "AAAAAANNNMMMMYYYYuuuuUUUUaaaarWWLLLLJ888DDDDDDDD";
 		String res = stringShortener.encodeStr(cad);
 		System.out.println("Input string: " + cad + ", length: " + cad.length()+ ", execution result: " + res + ", length: " + res.length());
-		assertTrue("Success because input string is larger than procesed string.",cad.length() > res.length());
+		assertTrue("Success because input string length is larger than output string length.",cad.length() > res.length());
 	}
 
 	@Test
@@ -28,7 +27,7 @@ public class StringShortenerTest {
 		String cad = "11234TTTTttttthhhHHHHKkKkLLLiiii9999u";
 		String res = stringShortener.encodeStr(cad);
 		System.out.println("Input string: " + cad + ", execution result: " + res);
-		assertTrue("Success because input string is larger than procesed string.",cad.length() > res.length());
+		assertTrue("Success because input string is larger length than output string length.",cad.length() > res.length());
 	}
 
 	@Test
@@ -36,7 +35,7 @@ public class StringShortenerTest {
 		String cad = "a";
 		String res = stringShortener.encodeStr(cad);
 		System.out.println("Input string: " + cad + ", execution result: " + res);
-		assertTrue("Fail because the input string has just one charater and procesed string will have 2 characters [character, character ocurrences] ",cad.length() > res.length());
+		assertTrue("Fail because the input string length is shorter than output string length.",cad.length() > res.length());
 	}
 	
 	@Test
@@ -44,7 +43,7 @@ public class StringShortenerTest {
 		String cad = "abccd22g";
 		String res = stringShortener.encodeStr(cad);
 		System.out.println("Input string: " + cad + ", execution result: " + res);
-		assertTrue("Fail because input string has a few repeated characters ",cad.length() > res.length());
+		assertTrue("Fail because the input string length is shorter than output string length.",cad.length() > res.length());
 	}
 	
 }

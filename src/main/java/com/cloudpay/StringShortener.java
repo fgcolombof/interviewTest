@@ -59,13 +59,19 @@ public class StringShortener {
 					System.out.println("bye!!");
 					break;
 				}
-				// String cad = "AAAAAANNNMMMMYYYYuuuuUUUUaaaarWWLLLLJ888DDDDDDDD";
-				// String cad = "11234TTTTttttthhhHHHHKkKkLLLiiii9999u";
-				System.out.println("Imput string: " + line);
+				int lineLenght = line.length();
+				System.out.println("Imput string: " + line + ", length: " + line.length());
 				StringShortener transfomer = new StringShortener();
-				System.out.println("String output: " + transfomer.encodeStr(line));
+				String outPut = transfomer.encodeStr(line);
+				int outPutLength = outPut.length();
+				System.out.println("String output: " + outPut + ", length: " + outPutLength);
+				if(lineLenght > outPutLength){
+					System.out.println("Success, input string lenght (" + lineLenght+ ") is larger than output string lenght (" + outPutLength + ")\n");
+				}else{
+					System.err.println("Fail, input string lenght (" + lineLenght+ ") is shorter or equal than output string lenght (" + outPutLength + ")\n");
+				}
 			}
-			System.out.println("Please enter a string to process: (send 'q or Q' to exit) ");
+			System.out.println("Please enter a string to process: (send 'q or Q' to exit) \n");
 		}
 	}
 
