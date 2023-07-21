@@ -13,6 +13,19 @@ import java.util.Scanner;
  */
 public class StringShortener {
 
+	/**
+     The logic behind the algorithm is to process the input string character by character.
+     Whenever a different character is encountered, it is appended to the output string, 
+     and the algorithm proceeds to count consecutive occurrences of that character.
+     If subsequent characters match the previous one, their count is determined and added 
+     to the output string along with the character itself. This process continues, 
+     allowing the algorithm to compress the output string, reducing its length relative 
+     to the input string.
+     This algorithm will lose efficiency when the input strings have few repetitions and 
+     when the repetitions occur in groups of a maximum of 2 positions. It will achieve 
+     its highest efficiency when there are occurrences of groups with three or more 
+     identical characters.     
+    */
 	public String encodeStr(String s) {
 		StringBuilder sb = new StringBuilder();
 		if (s.length() == 1) {

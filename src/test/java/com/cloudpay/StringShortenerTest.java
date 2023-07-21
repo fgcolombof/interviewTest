@@ -39,7 +39,7 @@ public class StringShortenerTest {
 	}
 	
 	@Test
-	public void checkStringWirhfewReapetedCharcters() throws Exception {
+	public void checkStringWithAFewReapetedCharacters() throws Exception {
 		String cad = "abccd22g";
 		String res = stringShortener.encodeStr(cad);
 		System.out.println("Input string: " + cad + ", execution result: " + res);
