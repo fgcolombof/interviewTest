@@ -1,8 +1,8 @@
 # interviewTest
 Practical exercise solved for Cloudpay job interview
 
-Software 1equeriments:
-- Java 8 or above
+Software Requeriments:
+- Java 8 and above
 - Maven 3.6.3.
 
 Here are the instructions for execution:
@@ -11,7 +11,7 @@ Here are the instructions for execution:
 - Execute the command "mvn install" in the command line. This will download the necessary dependencies and generate the required classes.
 - After that, run the command "mvn test" to execute the tests, and you will be able to see different cases and their results.
 
-Algoritm explanation:
+Algorithm explanation:
 
 The logic behind the algorithm is to process the input string character by character.
 Whenever a different character is encountered, it is appended to the output string, 
