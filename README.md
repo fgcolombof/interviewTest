@@ -11,6 +11,11 @@ Here are the instructions for execution:
 - Execute the command "mvn install" in the command line. This will download the necessary dependencies and generate the required classes.
 - After that, run the command "mvn test" to execute the tests, and you will be able to see different cases and their results.
 
+Source code:
+- The algorithm logic for string shortening is implemented in the com.cloudpay.StringShortener class.
+
+- The test cases for the algorithm are available in the com.cloudpay.StringShortenerTest class.
+
 Algorithm explanation:
 
 The logic behind the algorithm is to process the input string character by character.
